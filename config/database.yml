@@ -1,5 +1,23 @@
+production:
+  adapter: sqlserver
+  mode: dblib
+  dataserver:
+  host: demox.database.windows.net
+  port: 1433
+  database: demox
+  username: alejandro@demox
+  password: Control5
+  timeout: 5000
+  azure: true
+
 development:
- adapter: sqlserver
- mode: ODBC
- dsn: Driver={SQL Server};Server=demox.database.windows.net;Uid=alejandro@demox.database.windows.net;Pwd=1234;Database=demox
- azure: true
+  adapter: sqlserver
+  mode: dblib
+  dataserver:
+  host: demox.database.windows.net
+  port: 1433
+  database: demox
+  username: alejandro@demox
+  password: Control5
+  timeout: 5000
+  azure: true
